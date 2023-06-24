@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <nav id="myP">
+        <div class="container">
+           <a href="#arr"><img src="/images/logo.svg" alt="" class="logo"></a> 
+            <ul>
+                <li><a class="nav-menu" href="#course">Դասընթացներ</a></li>
+                <li><a class="nav-menu" href="#main">Առավելություններ</a></li>
+                <li><a class="nav-menu" href="#train">Թրեյներներ</a></li>
+                <li><a class="nav-menu" href="#ab">Մեր մասին  </a></li>
+             
+            </ul>
+            <a href="#sign" class="sign-in" onclick="funcs()">Սկսել ուսումը</a> 
+            
+            <i class="fa-solid fa-bars bar"></i>
+            <i class="fa-solid fa-xmark menux"></i>
+        </div>
+    </nav>
+    <div class="bg" id="sign">
+        <div class="sign"  >
+            <div class="container">
+                <div class="sign1">
+                    <img src="/images/reg.png" alt="">
+                    <i class="fa-solid fa-xmark faxm "></i>
+                </div>
+                <div class="sign2">
+                    <p>ԳՐԱՆՑՎԵԼ ԴԱՍԸՆԹԱՑԻՆ
+                    </p>
+                    <form action="">
+                    <select name="d" id="in">
+                        <option value="">Ընտեր կուրսը</option>
+                        <option value="">Ծրագրավորում 0-ից դասընթաց</option>
+                        <option value="">Վեբ ծրագրեվորման դասընթաց</option>
+                        <option value="">JavaScript դասընթաց</option>
+                        <option value="">React.js դասընթաց </option>
+                        <option value="">Node.js դասընթաց</option>
+                        <option value="">Python/DJango դասընթաց</option>
+                        <option value="">PHP/Laravel դասընթաց</option>
+                        <option value="">C# դասընթաց</option>
+                        <option value="">Python/ML դասընթաց</option>
+                        <option value="">Java դասընթաց</option>
+                    </select>
+                    <input type="text" placeholder="Անուն Ազգանուն" id="in">
+                    <input type="text" placeholder="Էլ․ փոստ" id="in">
+                    <input type="text" placeholder="Հեռախոսահամար" id="in">
+                    <select name="" id="in">
+                        <option value="">Նախընտրած ժամեր</option>
+                        <option value="">Առավոտյան</option>
+                        <option value="">Ցերեկային</option>
+                        <option value="">Երեկոյան</option>
+                        <option value="">Բոլոր ժամերը</option>
+                    </select>
+                  
+                    <label for="radio" class="arka active">
+                        <input type="radio" id="radio" checked class="arkainp">
+                        Առկա
+                    </label>
+                            <label for="" class="online">
+                                <input type="radio">
+                                Օնլայն
+    
+                            </label>
+                    </form>
+                    
+                            
+                            
+    
+                            <a href="" class="granc">ԳՐԱՆՑՎԵԼ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="asidemenu">
+        <ul>
+            <li><a class="nav-menu asmen1" href="#course">Դասընթացներ</a></li>
+            <li><a class="nav-menu asmen1" href="#main">Առավելություններ</a></li>
+            <li><a class="nav-menu asmen1" href="#train">Թրեյներներ</a></li>
+            <li><a class="nav-menu asmen1" href="#ab">Մեր մասին  </a></li>
+         
+        </ul>
+    </div>
+    <section id="arr">
+        <div class="ar" >
+        <div class="container" >
+            <div class="section-info">
+                <p> <span>Սովորի՛ր</span>  ծրագրավորում<br>
+                   <span>Դարձի՛ր</span>  պահանջված մասնագետ</p>
+                   <p>Որակյալ ուսուցում, անվճար պրակտիկա, երաշխավորված աշխատանք։</p>
+                   <div class="sign-video">
+                    <a href="#sign" class="sign-in `${window.scrollY}px`" onclick="funcs()">Սկսել ուսումը</a>
+                   <a href="#vid" class="video"><i class="fa-regular fa-circle-play"></i> <span>Տեսանյութ</span> </a>
+                   </div>
+                   
+                   <ul class="icons">
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                   </ul>
+            </div>
+            <div class="section-image">
+                <img src="/images/header.svg" alt="">
+            </div>
+        </div></div>
+        <div class="videodiv" id="vid">
+           <div class="vid2">
+            <video src="/images/video.mp4" controls ></video>
+            <i class="fa-solid fa-xmark xfam"></i>
+           </div> 
+        </div>
+        <div class="course" id="course">
+            <div class="container">
+              <div class="course1" >
+                <p >Ծրագրավորման <span>դասընթացներ</span>
+                </p> 
+                    <p> Ծրագրավորման դասընթացներ նախատեսված սկսնակների համար</p>
+                    <div class="listone">
+                    <div class="cbox">
+                        <img src="/images/front-end.svg" alt="">
+                        <p class="w">WEB Front-End</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">7 ամիս</span>
+                        <span class="r">45000 ֏</span>
+                    </div>
+                    <div class="cbox">
+                        <img src="/images/full-stack.svg" alt="">
+                        <p class="w">WEB Full-Stack</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">10 ամիս</span>
+                        <span class="r">45000 ֏</span>
+                    </div>
+                    <div class="cbox">
+                        <img src="/images/javaScript.svg" alt="">
+                        <p class="w">JavaScript</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">3 ամիս</span>
+                        <span class="r">45000 ֏</span>
+                    </div>
+                    <div class="cbox">
+                        <img src="/images/react.svg" alt="">
+                        <p class="w">React.js (Redux)</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">2 ամիս</span>
+                        <span class="r">45000 ֏</span>
+                    </div>
+                </div>
+                <div class="listtwo" id="listwo">
+                    <div class="cbox">
+                        <img src="/images/node.svg" alt="">
+                        <p class="w">Node.js</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">3 ամիս</span>
+                        <span class="r">60000 ֏</span>
+                    </div>
+                    <div class="cbox">
+                        <img src="/images/python-django.svg" alt="">
+                        <p class="w">Python (Django)</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">4 ամիս</span>
+                        <span class="r">60000 ֏</span>
+                    </div>
+                    <div class="cbox">
+                        <img src="/images/php.svg" alt="">
+                        <p class="w">PHP (Laravel)</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">3 ամիս</span>
+                        <span class="r">60000 ֏</span>
+                    </div>
+                    <div class="cbox">
+                        <img src="/images/C.svg" alt="">
+                        <p class="w">C#</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">5 ամիս</span>
+                        <span class="r">60000 ֏</span>
+                    </div>
+                </div>
+                <div class="listthree">
+                    <div class="cbox">
+                        <img src="/images/python-django.svg" alt="">
+                        <p class="w">Python (ML/AI)</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">6 ամիս</span>
+                        <span class="r">60000 ֏</span>
+                    </div>
+                    <div class="cbox">
+                        <img src="/images/java.svg" alt="">
+                        <p class="w">Java (Android)</p>
+                        <p class="d">ԴԱՍԸՆԹԱՑ</p>
+                        <a href="" class="watch">Դիտել</a> <br>
+                        <span class="l">3 ամիս</span>
+                        <span class="r">60000 ֏</span>
+                    </div>
+                </div>
+                 <div class="round act1"></div>
+                 <div class="round act2"></div>
+                 <div class="round act3"></div>
+              </div>
+              <div class="course-img">
+                <img src="/images/per4.svg" alt="">
+              </div>
+             </div>
+        </div>
+      
+    </section>
+    <main id="main">
+        
+        <div class="container">
+            <div class="cont"><p>Ինչո՞ւ սովորել <span>մեզ մոտ</span></p>
+                <p>Մեզ մոտ ծրագրավորում սովորելը ձեռնտու է</p>
+            </div>
+            <div class="main-img">
+                <img src="/images/per2.svg" alt="">
+            </div>
+            <div class="main-info">
+               
+                <div class="infop" data-tab="#finp1">
+                    <div class="ptext">
+                        <i class="far fa-user-circle"></i>
+                        <p><span>Փորձառու </span><span>մասնագետներ</span> </p>
+                    </div>
+                    <div class="picon">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="infotext " id="finp1" >
+                        <p>Դասավանդում են փորձառու մասնագետներ, ովքեր կմատուցեն Ձեզ բարդ թվացող ինֆորմացիան բավականին պարզեցված տեսքով:</p>
+                    </div>
+                </div>
+                
+                <div class="infop" data-tab="#finp2">
+                    <div class="ptext">
+                        <i class="far fa-check-circle"></i>
+                        <p><span>
+                            Փոքր խմբեր </span> անհատական մոտեցում</p>
+                    </div>
+                    <div class="picon">
+                        <i class="fa-solid fa-angle-down "></i>
+                    </div>
+                    <div class="infotext " id="finp2">
+                        <p>Դասընթացները անցկացվում են՝ 6-8 ուսանողից կազմված խմբերից, ապահովելով անհատական մոտեցում յուրաքանչյուր ուսանողին:</p>
+                    </div>
+                </div>
+                <div class="infop" data-tab="#finp3">
+                    <div class="ptext">
+                        <i class="fas fa-mug-hot"></i>
+                        <p><span>Հարմարավետ  </span> կահավորված լսարաններ</p>
+                    </div>
+                    <div class="picon">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="infotext " id="finp3">
+                        <p>Մեր հարմարավետ կահավորված լսարաններում Ձեր ուսման պրոցեսը կդառնա էլ ավելի հաճելի։</p>
+                    </div>
+                </div>
+                <div class="infop" data-tab="#finp4">
+                    <div class="ptext">
+                        <i class="fa-solid fa-gift"></i>
+                        <p><span>3 դասի </span> անվճար մասնակցություն</p>
+                    </div>
+                    <div class="picon">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="infotext " id="finp4">
+                        <p>Բոլոր ուսանողներին կտրամադրվի 3 փարձնական անվճար դաս, որը Ձեզ հնարավորություն կտա փորձել Ձեր ուժերը և ծանոթանալ դասապրոցեսի ընթացքին։</p>
+                    </div>
+                </div>
+                <div class="infop" data-tab="#finp5">
+                    <div class="ptext">
+                        <i class="far fa-hourglass"></i>
+                        <p><span>Ապառիկ</span>  ուսուցում</p>
+                    </div>
+                    <div class="picon">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="infotext " id="finp5">
+                        <p>Շատ լավ հնարավորություն՝ սովորել ապառիկ պայմաններով և վճարել ուսման համար դասընթացի ավարտին՝ աշխատանքի անցնելուց հետո:</p>
+                    </div>
+                </div>
+                <div class="infop" data-tab="#finp6">
+                    <div class="ptext">
+                        <i class="far fa-building"></i>
+                        <p><span>Աշխատանքի </span> առաջարկ</p>
+                    </div>
+                    <div class="picon">
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="infotext " id="finp6">
+                        <p>Դասընթացի ավարտին լավագույն արդյունք ցուցաբերած ուսանողներին կառաջարկվի աշխատանք գործընկեր կազմակերպություններում:</p>
+                    </div>
+                </div>
+            </div>
+           <div class="butt"> <a href="#sign `${window.scrollY}px`" class="sign-in" onclick="funcs()">Սկսել ուսումը</a></div>
+        </div>
+    </main>
+    <div class="trainers" id="train">
+        <div class="container">
+            <div class="text">
+                <p>Դասընթաց<span>ավարներ</span></p>
+                <p>Մեր փորձառու մասնագետները կմատուցեն Ձեզ բարդ թվացող <br> ինֆորմացիան բավականին պարզեցված տեսքով:</p>
+            </div>
+            <div class="about">
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/1.png" alt="">
+                    </div>
+                    <p class="name">Էդգար</p>
+                    <p class="less">MERN-Stack</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/2.png" alt="">
+                    </div>
+                    <p class="name">Անդրանիկ</p>
+                    <p class="less">Full-Stack</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/3.png" alt="">
+                    </div>
+                    <p class="name">Նարեկ</p>
+                    <p class="less">JavaScript</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/4.png" alt="">
+                    </div>
+                    <p class="name">Էմիլ</p>
+                    <p class="less"> Front-End</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/5.png" alt="">
+                    </div>
+                    <p class="name">Ալբերտ</p>
+                    <p class="less">Python / ML</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/6.png" alt="">
+                    </div>
+                    <p class="name">Մերի</p>
+                    <p class="less">HTML/CSS</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/7.png" alt="">
+                    </div>
+                    <p class="name">Անուշավան</p>
+                    <p class="less">React.js</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/8.png" alt="">
+                    </div>
+                    <p class="name">Արմեն</p>
+                    <p class="less">MERN-Stack</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/9.png" alt="">
+                    </div>
+                    <p class="name">Քրիստինե</p>
+                    <p class="less">JavaScript</p>
+                    <p>Trainer</p>
+                </div>
+                <div class="tr-box">
+                    <div class="tr-img">
+                        <img src="/images/10.png" alt="">
+                    </div>
+                    <p class="name">էրիկ</p>
+                    <p class="less"> PHP/Laravel</p>
+                    <p>Trainer</p>
+                </div>
+            </div>
+            <div class="butt"><a href="#sign `${window.scrollY}px`" class="sign-in" onclick="funcs()">Սկսել ուսումը</a></div>
+        </div>
+    </div>
+    <div class="aboutus" id="ab">
+        <div class="container">
+            <div class="about1">
+                <p>Մեր <span>մասին</span></p>
+                <p>Ընկերության գործունեության մասին</p>
+            </div>
+            <div class="about2">
+                <div class="about2-text">
+                    <p>SmartCode ծրագրավորման ուսուցման ընկերությունը արդեն 6 տարի է կազմակերպում և իրականացնում է ծրագրավորման դասընթացներ, նպատակ ունենալով աշխատաշուկային հանձնել որակյալ մասնագետներ:
+                        <br><br>
+                        Հետևելով համաշխարհային IT թրենդներին՝ թարմացվում և կատարելագործվում են դասավանդման ծրագրերը: Հատուկ մշակված ծրագրի, տնային առաջադրանքների և անվճար փորձաշրջանի արդյունքում մեր ուսանողները գրանցում են մեծ հաջողություններ: Հմուտ մասնագետների աշխատանքի արդյունքում մենք վայելում ենք մեր ուսանողների սերն ու վստահությունը: Համագործակցելով IT ընկերությունների հետ՝ մենք Երաշխավորում ենք լավագույն ուսանողների փորձաշրջանն ու աշխատանքը:
+                        <br><br>
+                        Դու էլ միացի՛ր մեզ, դարձի՛ր մրցունակ ծրագրավորման ոլորտում և երաշխավորի՛ր աշխատանքդ SmartCode-ի օգնությամբ:</p>
+                </div>
+                    <div class="about2-img">
+                        <img src="/images/per3.svg" alt="">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="support">
+            <div class="container">
+                <div class="support1">
+                    <p>Մեր <span>գործընկերները</span></p>
+                    <p>Դասընթացի ավարտին կստանաք հնարավորություն անցնել <br>
+                        աշխատանքի մեր գործընկեր կազմակերպություններում</p>
+                </div>
+                <div class="support2">
+                    <div class="comp">
+                        <a href="" class="webf"><img src="/images/webfoundationllc.svg" alt=""></a>
+                    </div>
+                    <div class="comp">
+                        <a href="" class="webf"><img src="/images/hi-teck.png" alt=""></a>
+                    </div>
+                    <div class="comp">
+                        <a href="" class="webf"><img src="/images/Iguan.png" alt=""></a>
+                    </div>
+                    <div class="comp">
+                        <a href="" class="webf"><img src="/images/evistep.png" alt=""></a>
+                    </div>
+                    <div class="comp">
+                        <a href="" class="webf"><img src="/images/bee-web.png" alt=""></a>
+                    </div>
+                    <div class="comp">
+                        <a href="" class="webf"><img src="/images/s2s.png" alt=""></a>
+                    </div>
+                    <div class="comp">
+                        <a href="" class="webf"><img src="/images/unisoft.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="butt"><a href="#sign `${window.scrollY}px`" class="sign-in" onclick="funcs(), afunc()">Սկսել ուսումը</a></div>
+                
+            </div>
+            <div class="card" id="idram" >
+                <div class="pay">
+                    <div class="payhead">
+                        <img src="/images/pay.png" alt="">
+                        <i class="fa-solid fa-xmark payx "></i>
+                    </div>
+                    <div class="paytext">
+                        <p>ԱՆՑՆԵԼ ՆՈՒՅՆԱԿԱՆԱՑՈՒՄ</p>
+                        <input type="text" placeholder="Հեռախոսահամար">
+                        <button type="submit">ԱՌԱՋ <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+    
+                </div>
+            </div>
+    </div>
+    <footer id="footer">
+            
+            <div class="container">
+                <div class="footer1">
+                    <img src="/images/logo.svg" alt="">
+                    <p>Որակյալ ուսուցում, Անվճար պրակտիկա, Երաշխավորված աշխատանք</p>
+                    <ul class="icons">
+                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                       </ul>
+                </div>
+                <div class="footer2">
+                    <ul>
+                        <li class="h">Ընկերություն</li>
+                        <li class="all"><a href="">Դասընթացներ</a></li>
+                        <li class="all"><a href="">Առավելություններ</a></li>
+                        <li class="all"><a href="">Թրեյներներ</a></li>
+                        <li class="all"><a href="">Մեր մասին</a></li>
+                    </ul>
+                    <a href="#idram ` ${this.scrollY}px`" class="idram" onclick="idramFunc()"><img src="/images/idram.png" alt=""></a>
+                    <a href="#idram ` ${this.scrollY}px`" class="idram" onclick="idramFunc()"><img src="/images/card.png" alt=""></a>
+                </div>
+                <div class="footer2">
+                    <ul>
+                        <li class="h">Կապ մեզ հետ</li>
+                        <li class="all"><a href=""><i class="fa fa-phone"></i>+374 41 435344</a></li>
+                        <li class="all"><a href=""><i class="fa fa-phone"></i>+374 98 435341</a></li>
+                        <li class="all"><a href=""><i class="fa fa-envelope"></i>support@smartcode.am</a></li>
+                        <li class="all"><a href=""><i class="fa fa-map-marker"></i>Հանրապետության 22</a></li>
+                        <li class="all"><a href=""><i class="fa fa-map-marker"></i>Երվանդ Քոչար 28/2</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+    </footer>
+        
+       
+    </div>
+    
+
+
+    <script src="/script.js">
+        
+  
+    
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1144 @@
+:root{
+    --myOrange: #f3b01b;
+    --index:calc(1vw+1vh)
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all .5s ease;
+   
+}
+body{
+    overflow: auto;
+}
+.container{
+    max-width: 1140px;;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    /* box-shadow: 0 4px 16px rgb(242, 235, 235); */
+    z-index: 5;
+    
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li{
+    list-style-type: none;
+}
+nav .logo{
+    height: 60px;
+}
+nav .logo:hover{
+    cursor: pointer;
+}
+nav .nav-menu{
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    position: relative;
+    padding:20px;
+    transition: all .5s;
+}
+ nav .nav-menu::after{
+    content: '';
+   border-bottom: 2px solid orange;
+   position: absolute;
+   width: 0;
+   bottom: 0;
+   left:0;
+   transition: all .5s;
+}
+nav .nav-menu:hover::after{
+    width: 100%;
+}
+nav .container ul{
+    display: flex;
+    padding: 0 50px;
+ }
+ /* nav .container ul li{
+    margin-left: 0px;
+ } */
+ nav .sign-in{
+background-color: var(--myOrange);
+padding: 10px 40px;
+border-radius: 20px;
+font-size: 17px;
+color: white;
+text-decoration: none;
+border: 2px solid var(--myOrange);
+margin-left: 10px;
+
+ }
+
+ nav .sign-in:hover{
+    background: transparent;
+    color: #000;
+ }
+nav .menux {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+ }
+
+.asidemenu{
+    border-top: 5px solid var(--myOrange);
+    z-index: 100;
+    right: 0;
+    top: 95px;
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -4px 10px 16px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: -1000px;
+    transition: all .7s;
+    /* position: absolute; */
+}
+.asidemenu ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.asidemenu a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    opacity: 0.7;
+    position: relative;
+}
+.asidemenu a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-bottom: 2px solid var(--myOrange);
+    width: 0;
+    transition: all .7s;
+}
+.asidemenu a:hover::after{
+    width: 100%;
+}
+.asidemenu .asmen1{
+    border-bottom: 1px solid rgb(187, 187, 187);
+    padding: 10px 15px 15px 30px;
+}
+ .bg{
+    
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.568);
+    top: -1000px;
+    transition: all .7s ease;
+ }
+ .sign{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow:auto;
+ }
+
+ .sign .container{
+    background-color: #2a3136;
+    margin-top: 30px;
+    width: 500px;
+    position: relative;
+    min-height: 740px;
+    padding-bottom: 20px;
+    
+ }
+ .sign .container .sign1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+    background-color: #ffda3a;
+    padding: 20px;
+    position: relative;
+ }
+ .sign .container .sign1 i{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 30px;
+    cursor: pointer;
+ }
+ .sign .container .sign2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px;
+    align-items: center;
+ 
+ }
+ .sign .container .sign2 #in{
+    width: 100%;
+    background-color: #3a444a;
+    height: 35px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    color: rgb(218, 218, 218);
+    padding-left: 15px;
+    border: none;
+    outline: 0;
+ }
+ .sign .container .sign2 p{
+    color: rgb(218, 218, 218);
+    font-size: 20px;
+    margin-bottom: 20px;
+ }
+ .sign .container .sign2 label{
+    width: 110px;
+    margin: 30px 5px;
+   padding: 10px 16px 10px 0px;
+   border-radius: 20px; 
+   text-decoration: none;
+   background-color: #3a444a;
+   color:rgb(218, 218, 218) ;
+   position: relative;
+  cursor: pointer;
+ }
+ .sign .container .sign2 .arka{
+    margin-left: 140px;
+ }
+ .sign .container .sign2 label input{
+    visibility: hidden !important;
+    
+ }
+ .sign .container .active{
+    outline: 2px solid #f3b01b;
+    transition: all -1s ease;
+ }
+ .active .input{
+    visibility: unset;
+    
+    
+ }
+ .sign .container .sign2 .active::before{
+     content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffda3a;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    position: absolute;
+    visibility: visible; 
+    
+}
+
+
+
+.sign .container .sign2  .granc{
+    background-color: var(--myOrange);
+    padding: 10px 35px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin-top: 40px;
+    
+}
+.sign .container .sign2  .granc:hover{
+    background-color: #3a444a;
+    color: white;
+}
+ section{
+    padding-top: 160px;
+ }
+ section .container{
+    display: flex;
+    column-gap: 10px;
+ }
+
+ section .section-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+ }
+ section .sign-video{
+    display: flex;
+    
+ }
+ section .video{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+ }
+ section .video:hover span{
+    color: var(--myOrange);
+ }
+ section .video i{
+    color: var(--myOrange);
+    font-size: 35px;
+    margin-right: 10px;
+ }
+section .video span{
+    opacity: 0.6;
+}
+ section .sign-in{
+    background-color: var(--myOrange);
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid var(--myOrange);
+    width:210px;
+}
+section .sign-in:hover{
+        background: transparent;
+        color: #000;
+     }
+ section .section-info p:nth-child(1){
+        font-size: 35px;
+     }
+
+ section .section-info p:nth-child(2){
+        font-size: 18px;
+        opacity: .6;
+     }
+
+ section .section-info p span{
+        font-weight: 900;
+     }
+section .section-info .icons{
+        position: relative;
+        top: 100px;
+        display: flex;
+        column-gap: 30px;
+     }
+ section .section-info .icons i{
+        color: #000;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 20px;
+}
+section .videodiv{
+    background-color: rgba(0, 0, 0, 0.616);
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -1000px;
+   overflow: hidden;
+   padding: 15px;
+}
+section .videodiv video{
+    width: 800px;
+}
+section .videodiv .vid2{
+    position: relative;
+    
+}
+section .videodiv .xfam{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 30px;
+    z-index: 10000;
+    color: black;
+    cursor: pointer;
+    
+}
+.course{
+    margin: 150px 0;
+}
+.course .container{
+    display: flex;
+    column-gap: 30px;
+}
+.course .course1{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+.course .course-img{
+   
+    width: 49%;
+    display: flex;
+}
+.course-img img{
+    width: 100%;
+}
+.course .course1>p:nth-child(1){
+    font-size: 35px;
+    margin-bottom: 10px;
+ }
+.course .course1>p:nth-child(2){
+    font-size: 18px;
+    opacity: .6;
+    position: relative;
+    padding-bottom: 20px;
+ }
+.course .course1>p span{
+    font-weight: 900;
+ }
+.course .course1>p:nth-child(2)::after{
+    content: '';
+   border-bottom: 2px solid orange;
+   position: absolute;
+   width: 10%;
+   bottom: 0;
+   left:0;
+  
+}
+
+.course .course1 .cbox{
+    width: 46%;
+    height: 260px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 15px rgb(226, 226, 226);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    position: relative;
+}
+.course1 .cbox img{
+    width: 25%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.course1 .cbox .w{
+    color: var(--myOrange);
+    font-size: 22px;
+}
+.course1 .d{
+    opacity: 0.5;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.course1 .watch{
+    width: 150px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    border: 1px solid ;
+    font-size: 17px;
+}
+.course1 .watch:hover{
+    background-color: var(--myOrange);
+    color: white;
+    border: 1px solid var(--myOrange);
+    opacity: 1;
+}
+.cbox span{
+    position: absolute;
+    opacity: 0.5;
+    font-size: 12px;
+}
+.cbox .l{
+    left: 15px;
+    bottom: 10px;
+}
+.cbox .r{
+    right: 15px;
+    bottom: 10px;
+}
+.course1 .round{
+    width: 15px;
+    height: 15px;
+    border:1px solid #f3b01b;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.course1 .act1{
+    background-color: #f3b01b;
+}
+.course1 .listone{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.course1 .listtwo{
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+}
+.course1 .listthree{
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+
+}
+
+main .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .cont{
+    width: 100%;
+    text-align: center;
+}
+main .cont>p:nth-child(1){
+    font-size: 35px;
+    margin-bottom: 10px;
+ }
+main .cont>p:nth-child(2){
+    font-size: 18px;
+    opacity: .6;
+    padding-bottom: 20px;
+    position: relative;
+ }
+main .cont>p span{
+    font-weight: 900;
+ }
+main .cont>p:nth-child(2)::after{
+   content: '';
+   border-bottom: 2px solid orange;
+   position: absolute;
+   width: 5%;
+   bottom: 0;
+   left: 542px;
+  
+}
+main .main-img{
+    width: 49%;
+    display: flex;
+    margin-top: 100px;
+}
+main .main-img img{
+    width: 90%;
+}
+main .main-info{
+    width: 49%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.main-info .infop{
+    width: 100%;
+    border: 1px solid white;
+    box-shadow: 0 5px 5px rgb(247, 243, 243);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 10px;
+    row-gap: 20px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+.main-info .infop .ptext{
+    display: flex;
+    font-size: 20px;
+    
+}
+.main-info .infop .ptext p span:nth-child(1){
+    font-weight: 900;
+    opacity: 1;
+}
+.main-info .infop .ptext p span:nth-child(2){
+    opacity: 0.7;
+}
+.main-info .infop .ptext i{
+    color: var(--myOrange);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.main-info .infotext{
+    border-top: 1px solid rgb(221, 220, 220);
+    padding: 20px 10px 10px 10px;
+    display: none;
+    transition: all .5s linear;
+}
+
+.main-info .infotext p {
+    opacity: 0.7;
+    font-size: 18px;
+    font-weight: 200;
+}
+.infotext.infotextsec{
+    display: block;
+    transition: all .5s linear;
+}
+
+.infop.activeinf .fa-angle-down{
+    transform: rotateX(180deg);
+}
+
+
+main .butt{
+    width: 100%;
+    text-align: center;
+    margin: 100px 0;
+}
+main .sign-in{
+    background-color: var(--myOrange);
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid var(--myOrange);
+    margin-left: 10px;
+    
+    
+     }
+    
+main .sign-in:hover{
+        background: transparent;
+        color: #000;
+     
+     }
+.trainers .container{
+    text-align: center;
+    margin-top: 100px;
+}
+.trainers .container .text>p:nth-child(1){
+    font-size: 35px;
+    margin-bottom: 10px;
+ }
+.trainers .container .text>p:nth-child(2){
+    font-size: 18px;
+    opacity: .6;
+    padding-bottom: 20px;
+    position: relative;
+ }
+.trainers .container .text>p span{
+    font-weight: 900;
+ }
+.trainers .container .text>p:nth-child(2)::after{
+   content: '';
+   border-bottom: 2px solid orange;
+   position: absolute;
+   width: 6%;
+   bottom: 0;
+   left: 542px;
+  
+}
+.trainers .about{
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+.trainers .about .tr-box{
+    padding: 40px 20px;
+    width: 19.5%;
+    border: 1px solid  rgb(233, 233, 233);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    font-size: 20px;
+    background-color: white;
+}
+.trainers .about .tr-box:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 15px rgb(211, 211, 211);
+}
+.trainers .about .tr-box:hover .tr-img{
+    background-color: transparent;
+    transform: scale(1.07);
+}
+.tr-box .tr-img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: rgb(233, 233, 233); 
+    border: 2px solid   rgb(233, 233, 233);
+}
+.tr-box .tr-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.tr-box .name{
+    color: var(--myOrange);
+}
+.tr-box .less{
+    color: rgb(116, 116, 116);
+    font-weight: 100;
+    font-size: 18px;
+}
+.trainers .butt{
+    margin-top: 50px;
+}
+.trainers .sign-in{
+    background-color: var(--myOrange);
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid var(--myOrange);
+    margin: 40px;
+}
+    
+.trainers .sign-in:hover{
+        background: transparent;
+        color: #000;
+ }
+ .aboutus{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+ }
+ .about1{
+    text-align: center;
+ }
+.aboutus .container .about1>p:nth-child(1){
+    font-size: 35px;
+    margin-bottom: 10px;
+ }
+ .aboutus .container .about1>p:nth-child(2){
+    font-size: 18px;
+    opacity: .6;
+    padding-bottom: 20px;
+    position: relative;
+ }
+ .aboutus .container .about1>p span{
+    font-weight: 900;
+ }
+ .aboutus .container .about1>p:nth-child(2)::after{
+   content: '';
+   border-bottom: 2px solid orange;
+   position: absolute;
+   width: 6%;
+   bottom: 0;
+   left: 542px;
+  
+}
+.about2 {
+    display: flex;
+    margin-top: 100px;
+}
+.about2-text{
+    font-size: 20px;
+    opacity: 0.5;
+}
+.support{
+    margin-top: 200px;
+}
+.support1{
+    text-align: center;
+}
+.support .container .support1>p:nth-child(1){
+    font-size: 35px;
+    margin-bottom: 10px;
+ }
+ .support .container .support1>p:nth-child(2){
+    font-size: 18px;
+    opacity: .6;
+    padding-bottom: 20px;
+    position: relative;
+ }
+ .support .container .support1>p span{
+    font-weight: 900;
+ }
+ .support .container .support1>p:nth-child(2)::after{
+   content: '';
+   border-bottom: 2px solid orange;
+   position: absolute;
+   width: 6%;
+   bottom: 0;
+   left: 542px;
+  
+}
+.support2{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+    justify-content: center;
+}
+.support .webf{
+    display: block;
+    border-radius: 50px;
+    box-shadow: 0 0px 20px #00000017;
+    height: 80px;
+    padding: 20px 50px;
+    max-width: 300px;
+}
+.support .webf img{
+    height: 100%;
+    max-width: 100%;
+    filter: grayscale(1);
+}
+.support .webf:hover img{
+    filter: grayscale(0);
+   
+}
+.support .butt{
+    margin-top: 50px;
+    text-align: center;
+}
+.support .sign-in{
+    background-color: var(--myOrange);
+    padding: 10px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid var(--myOrange);
+    margin: 40px;
+}
+    
+.support .sign-in:hover{
+        background: transparent;
+        color: #000;
+ }
+ footer{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid white;
+    position: relative;
+ }
+footer .footer1{
+    width: 30%;
+    margin-right: 200px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+footer .footer2{
+    width: 25%;
+    font-size: 20px;
+    line-height: 1.5;
+}
+footer .container{
+    display: flex;
+}
+.footer1 img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.footer1 p{
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+footer .icons{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 10px;
+ }
+footer .icons i{
+    color: #000;
+    border: 1px solid black;
+    padding: 7px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.footer2 a {
+    text-decoration: none;
+    color: black;
+}
+.footer2 .h{
+    font-size: 22px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.footer2 .h::after{
+    content: '';
+   border-bottom: 2px solid orange;
+   position: absolute;
+   width: 20%;
+   bottom: 0;
+   left: 0;
+   margin-bottom: 10px;
+}
+.footer2 .all a{
+    color: rgb(167, 167, 167);
+}
+.footer2 i{
+    color: var(--myOrange);
+    margin-right: 10px;
+}
+nav .container .fa-bars{
+    opacity: 0;
+}
+footer .idram{
+    background-color: white;
+    box-shadow: 5px 5px 7px rgb(238, 237, 237);
+    padding: 4px 7px 2px 7px;
+    vertical-align: middle;
+    border-radius: 5px;
+    width: 50px;
+}
+footer .idram img{
+    width: 60px;
+}
+
+ .card{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000a2;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    position: absolute;
+    top: -6000px;
+}
+.card .pay{
+    max-width: 450px;
+    background-color: white;
+    margin-top: 50px;
+    border-radius: 26px;
+    height: 480px;
+
+}
+.pay img{
+    width: 100%;
+    border-radius: 26px;
+}
+.paytext{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 270px;
+    row-gap: 10px;
+    padding: 10px 30px;
+}
+.paytext input{
+    border: none;
+    outline: 0;
+    background-color: rgb(211, 211, 211);
+    padding: 10px;
+    border-radius: 20px;
+    width: 100%;
+}
+.paytext p{
+    opacity: 0.5;
+    font-size: 18px;
+}
+.paytext button{
+    background-color: #ffda3a;
+    border: none;
+    outline: 0;
+    padding: 10px 60px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.paytext button:hover{
+    background-color: #3a444a;
+    color: white;
+}
+.paytext i{
+    color: black;
+    font-size: 13px;
+}
+.payhead{
+    position: relative;
+}
+.payhead .payx{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.supfoot{
+    position: relative;
+}
+@media (max-width:1036px){
+    nav .container .fa-bars{
+        opacity: 1;
+        margin-left: -500px;
+        cursor: pointer;
+    }
+    nav .sign-in{
+        opacity: 0;
+        position: absolute;
+        top: -1000px;
+    }
+    nav ul{
+        opacity: 0;
+        position: absolute;
+        top: -1000px;
+        width: 10px;
+    }
+    nav{
+        width: 100%;
+    }
+  
+    .container{
+        padding: 0 20px;
+    }
+    footer .footer2{
+        font-size: 17px;
+    }
+    .sign .container {
+        padding: 0;
+    }
+    video{
+        max-width: calc(var(--index)*90);
+    }
+}
+@media (max-width:964px){
+    nav .container .fa-bars{
+        margin-left: -200px;
+        font-size: 30px;
+        
+    }
+    .sign .container .sign1{
+        width: 100%;
+    }
+    section .ar .container{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+    section .ar .container img{
+        width: 80%;
+    }
+    section .ar .container .sign-in{
+        margin: 0 auto;
+    }
+    section .ar .container .icons {
+        margin: 0 auto;
+        top: 0;
+    }
+    .course .container .course-img{
+       display: none;
+    }
+    .course .container .course1{
+        width: 100%;
+        justify-content: center;
+    }
+    .course .course1>p:nth-child(2)::after{
+        left: 45%;
+    }
+    main .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    main .container .main-info{
+        width: 100%;
+    }
+    main .container .main-img{
+        width: 80%;
+    }
+    .trainers .about .tr-box{
+        width: 49.5%;
+    }
+  
+    .aboutus .about2-img{
+        display: none;
+    }
+    .aboutus .about2-text{
+        text-align: center;
+    }
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container .footer1{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    footer .footer1 img{
+        width: 30%;
+    }
+    footer .footer1 .icons{
+        margin: 0 40%;
+    }
+   footer .footer2{
+    text-align: center;
+    width: 100%;
+   }
+    .container{
+        margin: 0 auto;
+    }
+    .footer2 .h::after{
+        left: 45%;
+    }
+    .aboutus .container .about1>p:nth-child(2)::after{
+        left: 45%;
+    }
+    .trainers .container .text>p:nth-child(2)::after{
+        left: 45%;
+    }
+    main .cont>p:nth-child(2)::after{
+        left: 45%;
+    }
+    .support .container .support1>p:nth-child(2)::after{
+        left: 45%;
+    }
+    .footer2 .h::after{
+        left: 45%;
+        width: 15%;
+    }
+    section .sign-video{
+    column-gap: 700px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+
+    }
+    section .video{
+        margin-left: 0px;
+    }
+}    
+
+@media (max-width:466px){
+   .trainers .tr-img{
+    width: 100%;
+    height: 50%;
+   }
+   .infop p{
+    font-size: calc(var(--index)*3);
+   }
+  .infop i{
+    font-size: calc(var(--index)*3);
+    }
+    .sign-in{
+        width: 182px;
+        font-size: 14px;
+    }
+    .trainers .sign-in{
+        max-width: 170px;
+        font-weight: 100;
+        font-size: 10px;
+        padding: 5px 15px;
+    }
+    
+}
